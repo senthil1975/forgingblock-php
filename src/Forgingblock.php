@@ -1,10 +1,10 @@
 <?php
+namespace Forgingblock;
+use rmccue\requests;
 
-if ( !class_exists( 'Requests' ) )
-	require_once('rmccue/requests/library/Requests.php');
 
 
-class ForgingblockAPI{
+class ApiClient{
 
 	var $RequestData = array();
 	var $ResponseData = array();
