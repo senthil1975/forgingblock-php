@@ -1,21 +1,14 @@
 {
-  "name": "forgingblock/forgingblock-php",
-  "description": "ForgingBlock PHP API library",
-  "keywords": [
-    "bitcoin",
-    "forgingblock"    
-  ],
-  "homepage": "https://forgingblock.io/",
-  "type": "library",
-  "license": "Apache-2.0",
-  "autoload": {
-    "psr-4": {
-      "forgingblock-php\\": "src/"
+    "name": "senthil/forgingblock-php",
+    "description": "ForgingBlock PHP API library",
+    "type": "library",
+	"license": "Apache-2.0",
+    "require": {
+        "rmccue/requests": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Senthil\\ForgingblockPhp\\": "src/"
+        }
     }
-  },  
-  "require": {
-    "php": ">=5.4.0",
-    "rmccue/requests": "~5.0|~6.0",
-    "psr/http-message": "^1.0"
-  }    
 }
