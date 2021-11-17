@@ -11,4 +11,5 @@
             "Senthil\\ForgingblockPhp\\": "src/"
         }
     }
+"minimum-stability": "stable"
 }
