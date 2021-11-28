@@ -3,7 +3,7 @@
     "description": "ForgingBlock PHP API library",
     "minimum-stability": "stable",	
     "type": "library",
-	"license": "Apache-2.0",
+    "license": "Apache-2.0",
     "require": {
         "rmccue/requests": "^1.8"
     },
