@@ -1,4 +1,4 @@
-# forgingblock-php
+# ForgingBlock PHP
 The official PHP library for the [ForgingBlock API](https://api.forgingblock.io/docs/).
 
 ## PHP versions
