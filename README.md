@@ -32,7 +32,7 @@ $InvoiceURL = $forgingblock->GetInvoiceURL();
 if ($InvoiceURL) header('Location: '.$InvoiceURL);
 else echo  $forgingblock->GetError();
 ```
-##Notifications
+## Notifications
 ``` php
 use Forgingblock\ApiClient;
 $forgingblock = new ApiClient($payment_mode);
