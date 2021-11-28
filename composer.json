@@ -12,6 +12,5 @@
         "psr-4": {
             "Forgingblock\\": "src/"
         }
-    },
-"minimum-stability": "stable"
+    }
 }
