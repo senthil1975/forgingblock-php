@@ -28,3 +28,5 @@ $forgingblock->SetValue('notification', $notifyURL);
 $forgingblock->SetValue('order', $order_id);
 $forgingblock->CreateInvoice();				
 $InvoiceURL = $forgingblock->GetInvoiceURL();
+if ($InvoiceURL) header('Location: '.$InvoiceURL);
+else echo  $forgingblock->GetError();
