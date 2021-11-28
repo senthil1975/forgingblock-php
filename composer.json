@@ -1,6 +1,7 @@
 {
     "name": "senthil/forgingblock-php",
     "description": "ForgingBlock PHP API library",
+    "minimum-stability": "stable",	
     "type": "library",
 	"license": "Apache-2.0",
     "require": {
