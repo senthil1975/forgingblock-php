@@ -18,7 +18,7 @@ composer require forgingblock/forgingblock-php
 ``` php
 use Forgingblock\ApiClient;
 
-//Make sure you don't store your API Key in your source code!
+//$payment_mode are test or live
 $forgingblock = new ApiClient($payment_mode);
 $forgingblock->SetValue('trade',  $trade);
 $forgingblock->SetValue('token', $token);
