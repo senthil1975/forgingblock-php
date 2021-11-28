@@ -19,7 +19,7 @@ composer require forgingblock/forgingblock-php
 use Forgingblock\ApiClient;
 
 //Make sure you don't store your API Key in your source code!
-$forgingblock = new ApiClient('test');
+$forgingblock = new ApiClient($payment_mode);
 $forgingblock->SetValue('trade',  $trade);
 $forgingblock->SetValue('token', $token);
 $forgingblock->SetValue('amount', round($amount, 2));								
@@ -31,3 +31,14 @@ $forgingblock->CreateInvoice();
 $InvoiceURL = $forgingblock->GetInvoiceURL();
 if ($InvoiceURL) header('Location: '.$InvoiceURL);
 else echo  $forgingblock->GetError();
+```
+##Notifications
+``` php
+use Forgingblock\ApiClient;
+$forgingblock = new ApiClient($payment_mode);
+$forgingblock->SetValue('trade',  $trade);
+$forgingblock->SetValue('token', $token);
+$forgingblock->SetValue('invoice', $invoice_id);		
+		
+$forgingblock->CheckInvoiceStatus();
+$payment_status = $forgingblock->GetInvoiceStatus();
