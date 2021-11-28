@@ -12,6 +12,7 @@ For more details visit [ForgingBlock API docs](https://api.forgingblock.io/docs/
 Install with ``composer``:
 ``` sh
 composer require forgingblock/forgingblock-php
+```
 
 ## Usage
 ``` php
